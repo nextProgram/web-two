@@ -1,4 +1,4 @@
-package com.example.webone.demo;
+package com.example.webtwo.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

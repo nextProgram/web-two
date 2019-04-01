@@ -1,14 +1,13 @@
-package com.example.webone.demo.base.service;
+package com.example.webtwo.demo.base.service;
 
-import com.example.webone.demo.base.ReturnVO;
-import com.example.webone.demo.jackSon.service.JackSonService;
-import com.example.webone.demo.redis.RedisUseInterface;
-import com.example.webone.demo.redis.vo.JedisRequestVO;
-import com.example.webone.demo.redis.vo.JedisReturnVO;
+import com.example.webtwo.demo.base.ReturnVO;
+import com.example.webtwo.demo.jackSon.service.JackSonService;
+import com.example.webtwo.demo.redis.RedisUseInterface;
+import com.example.webtwo.demo.redis.vo.JedisRequestVO;
+import com.example.webtwo.demo.redis.vo.JedisReturnVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestBody;
 
 /**
  * @author lhx

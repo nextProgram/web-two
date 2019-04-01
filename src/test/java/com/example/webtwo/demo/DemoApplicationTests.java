@@ -1,4 +1,4 @@
-package com.example.webone.demo;
+package com.example.webtwo.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

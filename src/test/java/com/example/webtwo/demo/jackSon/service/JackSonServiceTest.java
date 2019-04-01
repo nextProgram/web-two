@@ -1,4 +1,4 @@
-package com.example.webone.demo.jackSon.service;
+package com.example.webtwo.demo.jackSon.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,8 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.IOException;
-
-import static org.junit.Assert.*;
 
 /**
  * @author lhx

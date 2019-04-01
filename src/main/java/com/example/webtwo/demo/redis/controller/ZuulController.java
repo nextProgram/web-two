@@ -1,4 +1,4 @@
-package com.example.webone.demo.redis.controller;
+package com.example.webtwo.demo.redis.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

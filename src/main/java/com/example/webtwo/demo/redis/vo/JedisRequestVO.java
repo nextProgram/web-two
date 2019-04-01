@@ -1,4 +1,4 @@
-package com.example.webone.demo.redis.vo;
+package com.example.webtwo.demo.redis.vo;
 
 /**
  * @author lhx

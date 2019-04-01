@@ -1,12 +1,11 @@
-package com.example.webone.demo.redis.service;
+package com.example.webtwo.demo.redis.service;
 
-import com.example.webone.demo.base.ReturnVO;
-import com.example.webone.demo.redis.RedisUseInterface;
-import com.example.webone.demo.redis.vo.JedisRequestVO;
-import com.example.webone.demo.redis.vo.JedisReturnVO;
+import com.example.webtwo.demo.base.ReturnVO;
+import com.example.webtwo.demo.redis.RedisUseInterface;
+import com.example.webtwo.demo.redis.vo.JedisRequestVO;
+import com.example.webtwo.demo.redis.vo.JedisReturnVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

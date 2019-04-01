@@ -1,15 +1,10 @@
-package com.example.webone.demo.redis;
+package com.example.webtwo.demo.redis;
 
-import com.example.webone.demo.base.ReturnVO;
-import com.example.webone.demo.base.service.FallBackOfJedis;
-import com.example.webone.demo.redis.vo.JedisRequestVO;
-import com.example.webone.demo.redis.vo.JedisReturnVO;
-import com.netflix.client.http.HttpRequest;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import feign.Headers;
+import com.example.webtwo.demo.base.ReturnVO;
+import com.example.webtwo.demo.base.service.FallBackOfJedis;
+import com.example.webtwo.demo.redis.vo.JedisRequestVO;
+import com.example.webtwo.demo.redis.vo.JedisReturnVO;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
