@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example.webtwo</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>webtwo</artifactId>
     <version>0.0.1.BUILD-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>demo</name>
+    <name>webtwo</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -83,6 +83,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!--rabitMQ-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
 
     </dependencies>
