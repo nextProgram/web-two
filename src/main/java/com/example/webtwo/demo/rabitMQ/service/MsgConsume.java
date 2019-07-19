@@ -61,17 +61,24 @@ public class MsgConsume {
             value = @Queue("fruitOrder")
     ))
     public void processFruit(Message message, Channel channel) {
-        /*try {*/
+        try {
             //消费消息
             String msg = new String(message.getBody());
             logger.info("fruit MqReceiver: {}", msg);
-            // 采用手动应答模式, 手动确认应答更为安全稳定
-            //true表示采用自动回执模式，false表示采用手动回执模式
-            //channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
-        /*} catch (IOException e) {
+            //采用手动应答模式, 手动确认应答更为安全稳定
+            //rabbitmq默认的处理方式为auto ack，意味着从消息队列取出一个消息时，ack自动发送，mq就会将消息删除
+            //true表示采用自动回执模式，false表示采用手动回执模式（手动ack），不进行手动ack则mq不做删除
+            //在消息处理成功后发送ack确认，或失败后发送nack使信息重新投递
+            channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+        } catch (IOException e) {
             e.printStackTrace();
             logger.info(e.getMessage());
-        }*/
-
+            try {
+                channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+            } catch (IOException e1) {
+                e1.printStackTrace();
+                logger.info("send message failed: {}" ,e1.getMessage());
+            }
+        }
     }
 }
