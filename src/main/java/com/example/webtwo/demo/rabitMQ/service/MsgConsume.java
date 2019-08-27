@@ -14,6 +14,7 @@ import java.io.IOException;
 
 /**
  * 从rabbitMQ消费消息
+ * 注解方式，配置方式，此处使用注解方式
  * @RabbitListener
  * @author lhx
  * @date 2019/6/20
